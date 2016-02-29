@@ -7,20 +7,40 @@ h1{
   top:0px;
   margin: 0;
   padding:30px;
-  background:black;
+  background: linear-gradient(grey, black) ;
   text-align:center;
   color:tomato;
   border-bottom-left-radius: 30px;
   border-bottom-right-radius: 30px;
   box-shadow: 2px 5px teal;
 }
-
+.calculations{
+  margin: 15px auto;
+  padding: 10px 20px;
+  width: 430px;
+}
+.employeeForm{
+  display: inline-block;
+}
+input[type="text"],input[type="number"]{
+  float: right;
+}
+input[type="submit"]{
+  width:430px;
+  box-shadow: gray 4px 4px;
+}
+input[type="submit"]:active{
+  box-shadow:none;
+  background: grey;
+  text-decoration: white underline;
+}
 .recent-submit{
   display:inline-block;
   width: 200px;
   border:1px solid black;
   margin:15px;
   padding: 15px 15px;
+  background: linear-gradient(white, grey) ;
   border-radius:5px;
-  box-shadow: 4px 4px rgba(0,0,0,0.90);
+  box-shadow: 4px 4px rgba(20,20,20,.90);
 }

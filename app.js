@@ -14,7 +14,7 @@ $(document).ready(function(){
       });
 
     //Erases form cache
-    $('.employeeform').find('input[type=text]').val('');
+    $('#employeeform').find('input[type="text"]').text('');
     //
     //TODO: strip $ and , from salary string
     //
@@ -56,12 +56,12 @@ $(document).ready(function(){
 
 //
 // function to calculate and display total salary to dom
-function totalMonthCalc(employees){
+function totalMonthCalc(placeholderArray){
     var monthTotal= 0;
 
     //Loops through employee array, addingto monthTotal
-    for (var i = 0; i < employees.length; i++){
-      var workingEmployee = employees[i];
+    for (var i = 0; i < employeeArray.length; i++){
+      var workingEmployee = placeholderArray[i];
 
       monthTotal += parseInt(workingEmployee.monthlyPay);
     }
@@ -89,10 +89,8 @@ function displayRecentSubmit(employee){
 //returns error value of 1 if any values are undefined
 function invalidEntry(applicant){
   var error = 0;
-  if(applicant.name ==undefined
-    || applicant.monthlySalary == (undefined||NaN)
-    || applicant.salary == (undefined||NaN)
-    || applicant.job == undefined){
+  if( applicant.name == undefined || isNaN(applicant.monthlyPay) || applicant.monthlyPay == undefined || isNaN(applicant.salary) || applicant.salary == undefined || applicant.job == undefined )
+    {
     error = 1;
   }
   return error;

@@ -19,7 +19,7 @@
 
         <p>
         <label for="number">Employee number: </label>
-        <input type="text" id="number" name="number" placeholder="Employee number." />
+        <input type="number" id="number" name="number" placeholder="Employee number." step="1" min="0"/>
         </p>
 
         <p>
@@ -29,11 +29,11 @@
 
         <p>
         <label for="salary">Employee's salary: </label>
-        <input type="text" id="salary" name="salary" placeholder="Employee salary." />
+        <input type="number" id="salary" name="salary" placeholder="Employee salary." step="10" min="0"/>
         </p>
 
         <p>
-        <input type="submit" value="Submit Application" />
+        <input type="submit" id="submit" value="Submit Application" />
         </p>
 
       </form>
