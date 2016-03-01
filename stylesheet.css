@@ -14,10 +14,9 @@ h1{
   border-bottom-right-radius: 30px;
   box-shadow: 2px 5px teal;
 }
-.calculations{
+.jumbotron{
   margin: 15px auto;
   padding: 10px 20px;
-  width: 430px;
 }
 .employeeForm{
   display: inline-block;
@@ -25,8 +24,12 @@ h1{
 input[type="text"],input[type="number"]{
   float: right;
 }
+.submit{
+  text-align: right;
+  margin: 0;
+}
 input[type="submit"]{
-  width:430px;
+  width: 234px;
   box-shadow: gray 4px 4px;
 }
 input[type="submit"]:active{
